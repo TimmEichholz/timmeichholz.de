@@ -1,0 +1,38 @@
+.footer{
+    
+    min-height: 150px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: black;
+ img{
+    height:40px;
+    width: 40px;
+ }
+
+ a{
+    text-decoration: none;
+margin: 8px;
+
+&:hover{
+    
+}
+ }
+}
+
+.stepstone{
+   width: 160px;
+   height: 160px;
+   background-image: url('/assets/img/icons/Stepstone-logo (1).jpg');
+   background-size: cover; /* Das Bild wird so skaliert, dass der Container komplett ausgefüllt wird. */
+  background-position: center; /* Das Bild wird zentriert im Container positioniert. */
+  background-repeat: no-repeat;
+
+}
+.img{
+   height: 40px;
+   width: 40px;
+}

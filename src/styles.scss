@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.width {
+    max-width: 1028px;
+}
+
+.bg {
+    &:nth-child(even) {
+        background-color: #1a1a1a;
+    }
+    &:nth-child(odd) {
+        background-color: black;
+    }
+}
+
+.primar-btn {
+    font-weight: bold;
+    height: 60px;
+    width: 225px;
+    background-color: transparent;
+    color: #2dfcd8;
+    border: 2px solid #2dfcd8;
+    transition: 125ms ease-in-out;
+
+    &:hover {
+        color: white;
+        background-color: #2dfcd8;
+    }
+}
+
+.sec-btn {
+    font-weight: bold;
+    height: 60px;
+    width: 225px;
+    background-color: transparent;
+    color: coral;
+    border: 2px solid coral;
+    transition: 125ms ease-in-out;
+
+    &:hover,
+    :active {
+        color: white;
+        background-color: coral;
+    }
+}
+
+.wrapper {
+   padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+
+    align-items: center;
+    padding-bottom: 64px;
+}
+.bg2 {
+    background-color: #1a1a1a;
+}
+
+.column {
+    flex-direction: column;
+}

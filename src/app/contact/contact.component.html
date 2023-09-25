@@ -1,0 +1,18 @@
+<div class="wrapper column " id="contact">
+    <div class="flex-start">
+    <h2>Contact Me.</h2>
+    <span>Get in touch via the form below, or by emailing</span> <a href="">teichholz@gmx.de</a>
+
+</div>
+<form (submit)="sendMail()" class="contact-wrapper" #mailForm ngNativeValidate>
+    <p>name</p>
+    <input required type="text" name="name" #nameField>
+ 
+    <p>Message</p>
+    <textarea required name="" id="" cols="30" rows="10" name="message" #messageField></textarea>
+    <div class="put-right">
+    <button #sendButton class="primar-btn">Send</button>
+</div>
+</form>
+</div>
+

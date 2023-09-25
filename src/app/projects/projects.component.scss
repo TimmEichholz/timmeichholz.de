@@ -1,0 +1,179 @@
+.container{
+//     position: relative;
+//     height: 60px;
+//     width: 225px;
+
+// label{
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+// input{
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     bottom:0;
+// }
+}
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 65px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 130px;
+  transition: 125ms ease-in-out;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    height: 60px;
+    width: 150px;
+    background-color: transparent;
+    color: coral;
+    border: 2px solid coral;
+    transition: 125ms ease-in-out;
+ text-align: center;
+ line-height: 60px;
+ vertical-align: middle;
+
+
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: coral;
+    color: white;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: coral;
+    color: white;
+  }
+  
+.project-nav-wrapper{
+  display: flex;
+}
+
+.labelnew{
+  position: absolute;
+  top:21;
+}
+
+
+
+.project{
+  background-color: gray;
+height: 260px;
+min-width: 300px;
+width: 25vw;
+max-width: 300px;
+border-radius: 4px;
+position: relative;
+margin: 8px;
+transition: ease-in-out 225ms;
+
+img{
+  border-radius: 4px;
+  object-fit: cover;
+  object-position:40%;
+  height: 100%;
+  width: 100%;
+}
+}
+.project-overbox{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  z-index: 1;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 225ms;
+  opacity: 0;
+  color: black;
+
+  h4{
+    font-size: 20px;
+  }
+  
+  p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-overflow: "…";
+      font-weight: bolder;
+     
+  }
+  
+  &:hover{
+      
+      opacity: 1;
+  }
+}
+
+.second-button{
+  transition: 500ms;
+  color: coral;
+
+    border: 1px solid coral;
+    padding:10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight:550;
+  
+
+
+  &:hover {
+    background-color: coral;
+    color: black;
+  }
+
+}
+.flex-justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-box{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h4{
+  margin:0;
+}

@@ -1,0 +1,24 @@
+<div class="bg2 wrapper column" >
+    <div class="am-wrapper">
+        <img class="smaller-avatar" src="/assets/img/profil.JPG" alt="">
+
+        <div>
+            <h2>About me.</h2>
+            <p>something about me.</p>
+        </div>
+    </div>
+
+<div class="journey-wrapper">
+
+    <div class="am-chapter" *ngFor="let step of journeysteps">
+        <div class="icon-box">
+            <img src="/assets/img/{{step.icon}}" alt="">
+        </div>
+
+        <h3>{{step.headline}}</h3>
+        <p>{{step.text}}</p>
+    </div>
+</div>
+
+</div>
+

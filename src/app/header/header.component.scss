@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+    img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+    }
+}

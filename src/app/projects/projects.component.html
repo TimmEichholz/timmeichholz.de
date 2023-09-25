@@ -1,0 +1,41 @@
+<div class="bg wrapper column">
+    <h2>My work</h2>
+    
+<div  class="project-nav-wrapper" >
+
+<label class="container">
+    <input type="radio" checked="checked" name="radio" value="All" [(ngModel)]="showProject" >
+    <span class="checkmark" value="all">All</span>
+  </label>
+
+  <label class="container">
+    <input type="radio" name="radio" value="js" [(ngModel)]="showProject">
+    <span class="checkmark" value="js"  >Java Script</span>
+  </label>
+  
+  <label class="container">
+    <input type="radio" name="radio" value="angular" [(ngModel)]="showProject">
+    <span class="checkmark" value="angular">Angular</span>
+  </label>
+
+
+
+</div>
+
+<div class="project-box">
+    <div  class="project-window" *ngFor="let project of projects" data-aos="fade-in" data-aos-duration="1000">
+        <div class="project" *ngIf="showProject === project.tech || showProject=='All'">
+            <div class="project-overbox">
+                <h4>{{ project.name }}</h4>
+                <p>{{ project.description}}</p>
+                <div class="flex-justify-around">
+                    <a class="second-button" href="{{project.link}}">Try out</a>
+                    <button class="second-button">Git Hub</button>
+                  <!--  <button class="second-button">JS Doc</button>-->
+                </div>
+            </div>
+            <img src="{{ project.imgsrc }}" alt={{project.tech}}>
+
+        </div>
+    </div>
+</div>

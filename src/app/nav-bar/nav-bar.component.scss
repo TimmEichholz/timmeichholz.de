@@ -1,0 +1,28 @@
+.nav-bar{
+    margin:24px;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+
+    img{
+        height:60px;
+    }
+}
+
+.nav-links{
+    a{
+        margin-left:60px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        
+        border-bottom: 2px solid transparent;
+        transition: 150ms ease-in-out;
+
+        &:hover{
+            border-bottom: 2px solid coral;
+            color: coral;
+        }
+    }
+}

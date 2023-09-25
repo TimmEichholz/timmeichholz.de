@@ -1,0 +1,12 @@
+<div class="wrapper column bg2">
+    <h2>MY Skills</h2>
+
+    <div class="skill-wrapper" >
+        <div class="skill-box" *ngFor="let skill of skills">
+            <div class="skill-pic">
+                <img src="/assets/img/icons/{{skill.imgsrc}}" alt="">
+            </div>
+{{ skill.name}}
+        </div>
+    </div>
+</div>
